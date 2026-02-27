@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Producto (ETag + PUT)</title>
+  <link rel="stylesheet" href="productStyles.css">
+</head>
+<body>
+  <h1>ETag + PUT Demo (Producto)</h1>
+
+  <button id="fetchProduct">Obtener producto (GET)</button>
+
+  <h2>Editar producto</h2>
+  <label>
+    Nombre:
+    <input id="nameInput" type="text" />
+  </label>
+  <br><br>
+
+  <label>
+    Precio:
+    <input id="priceInput" type="number" step="0.01" />
+  </label>
+  <br><br>
+
+  <label>
+    Mensaje:
+    <textarea id="messageInput" rows="4"></textarea>
+  </label>
+  <br><br>
+
+  <button id="updateProduct">Actualizar producto (PUT con If-Match)</button>
+
+  <hr>
+  <div id="dataContainer"></div>
+
+  <script src="conditionalproduct.js"></script>
+</body>
+</html>
